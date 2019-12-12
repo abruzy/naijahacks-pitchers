@@ -1,0 +1,55 @@
+{
+  "name": "naijahacks-pitchers",
+  "version": "1.0.0",
+  "description": "A platform that link hospitals together for easier patient management. ",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abruzy/naijahacks-pitchers.git"
+  },
+  "keywords": [
+    "Naijahacks",
+    "Health",
+    "Solution",
+    "Node"
+  ],
+  "author": "Naijahacks-pitchers team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abruzy/naijahacks-pitchers/issues"
+  },
+  "homepage": "https://github.com/abruzy/naijahacks-pitchers#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.7",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-joi-validator": "^2.0.1",
+    "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-esnext": "^4.0.0",
+    "eslint-config-node": "^4.0.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "husky": "^3.1.0",
+    "jasmine": "^3.5.0",
+    "lint-staged": "^9.5.0",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "request": "^2.88.0"
+  }
+}
