@@ -6,7 +6,7 @@ const app = require('./src/app');
 require('dotenv').config({ path: '.env' });
 const config = require('./src/config');
 
-const db = require('./src/db');
+// const db = require('./src/db');
 
 const normalizePort = val => {
   const port = parseInt(val, 10);
