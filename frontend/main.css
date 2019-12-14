@@ -1,0 +1,1078 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("./fonts/HelveticaNeue\ Light.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica" !important;
+}
+
+div.dummy {
+  width: 100%;
+  height: 50px;
+}
+
+div.container-fluid {
+  padding: 0;
+  background: #f4f7fc;
+  overflow: hidden;
+  width: auto;
+}
+
+div.mobile-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div.navbar,
+div.sidebar-nav {
+  background: #fff;
+  width: 100%;
+  height: 10vh;
+  box-shadow: 0px 4.5px 18px rgba(0, 0, 0, 0.1);
+}
+
+div.toggle div {
+  width: 20px;
+  height: 3px;
+  background: #0271ee;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+form button {
+  background: none;
+  margin: 0;
+  outline: none;
+  border: none;
+}
+
+form .search {
+  border: none;
+  color: #a9b3d2;
+  outline: none;
+}
+
+form button,
+form .search::placeholder {
+  color: #a9b3d2;
+  opacity: 0.7;
+  line-height: 1.7;
+  font-size: 14.625px;
+}
+
+div.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #0271ee;
+}
+
+div.user-profile-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+  background: #a9b3d2;
+  margin-right: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 10vh;
+  right: -3px;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  white-space: nowrap;
+  align-items: center;
+  display: flex;
+  color: #a9b3d2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a.create-documentation {
+  background: linear-gradient(101.13deg, #f46b45 0%, #eea849 100%);
+  border-radius: 4.5px 4.5px 0 0;
+  width: 100%;
+  justify-content: space-between;
+  color: #fff;
+}
+
+a.cd1,
+#j_bob {
+  display: none;
+}
+
+.dropdown-content a div {
+  margin-left: 5px;
+}
+
+/********************************
+        SIDE NAV STYLES
+********************************/
+.sidenav {
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.sidenav-sidemenu,
+.sidenav {
+  width: 0;
+  position: fixed;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+div.sidebar {
+  display: flex;
+  justify-content: space-between;
+  height: 90%;
+}
+
+div.sidebar-nav {
+  background: #fff;
+  position: relative;
+  height: 10%;
+}
+
+.sidebar-nav-options {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  justify-content: space-between;
+  padding: 0 10px 0 20px;
+}
+
+div.sidebar-nav hr {
+  width: 1.12px;
+  height: 36px;
+  position: absolute;
+  right: 0;
+  background: #a9b3d2;
+  opacity: 0.2;
+  top: 13.5px;
+  margin: 0;
+}
+
+.sidenav .closebtn {
+  color: #0271ee;
+}
+
+.sidenav-sidemenu {
+  height: -webkit-fill-available;
+  background: linear-gradient(180deg, #0072ff 0%, #00c6ff 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.top-icons {
+  width: 100%;
+  padding-top: 20px;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-icons div {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+}
+
+.top-icons hr {
+  height: 40px;
+  width: 4px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  background: #2be1cb;
+  margin: 0;
+  border-radius: 0 40px 40px 0;
+}
+
+.last-icon {
+  position: relative;
+  bottom: 1.7rem;
+}
+
+.sidenav-content {
+  padding: 10px;
+  height: 90vh;
+  overflow-y: auto;
+  padding-bottom: 40px;
+}
+
+.sidenav-content span.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10%;
+}
+
+.sidenav-content span.header > p:first-child {
+  font-size: 1.5rem;
+  color: #434b65;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 0;
+}
+
+.sidenav-content span.header :last-child {
+  display: flex;
+  align-items: flex-end;
+  color: #9aa6ce;
+  font-weight: 600;
+  padding-bottom: 4px;
+}
+
+.sidenav-content span.header :last-child p {
+  margin: 0 6px;
+}
+
+span.header {
+  font-size: 27px;
+}
+
+div.recent {
+  font-size: 14.625px;
+}
+
+div.recent i {
+  padding-bottom: 0;
+  font-size: 10px;
+}
+
+div.patient {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0 5px;
+}
+
+div.patient:hover {
+  background: #f4f7fc;
+  border-radius: 4.5px;
+}
+
+div.patient .user-profile-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(180deg, #a26fed 0%, #ee86bf 100%);
+}
+
+div#leen {
+  background: linear-gradient(180deg, #fb72ae 0%, #f25555 100%);
+}
+
+div#rowan {
+  background: linear-gradient(180deg, #b482d3 0%, #a2acf1 100%);
+}
+
+div#allan {
+  background: linear-gradient(180deg, #ffb064 0%, #ffe35a 100%);
+}
+
+div#neil {
+  background: linear-gradient(180deg, #45baf2 0%, #77efd8 100%);
+}
+
+div.patient .user-profile-avatar p {
+  margin: 0;
+  font-size: 19.4252px;
+  font-weight: 900;
+}
+
+div.user-info {
+  margin-left: 10%;
+}
+
+.name-gender,
+.age-condition {
+  display: flex;
+  align-items: center;
+}
+
+.name-gender p,
+.age-condition p {
+  margin: 2px 0;
+}
+
+.name-gender p {
+  font-size: 15px;
+  margin-right: 5px;
+  font-weight: 600;
+  color: #434b65;
+}
+
+.name-gender img {
+  position: relative;
+  top: -2px;
+}
+
+.age-condition p {
+  font-size: 14.625px;
+  color: #adaeb4;
+}
+
+.age-condition p:nth-child(2) {
+  position: relative;
+  top: -5px;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+/******************************
+      MAIN SCREEN STYLES
+******************************/
+
+div.selected-user {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  height: 15vh;
+}
+
+div.selected-user-image {
+  box-shadow: 0px 4.5px 13.5px rgba(0, 0, 0, 0.1);
+  width: 63px;
+  height: 63px;
+  border-radius: 63px;
+  margin-right: 5%;
+}
+
+.selected-user p {
+  margin: 0;
+}
+
+p.selected-user-name {
+  font-size: 27px;
+  font-weight: 900;
+  color: #434b65;
+}
+
+span.selected-user-details {
+  display: flex;
+  align-items: center;
+  font-size: 14.625px;
+  color: #adaeb4;
+}
+
+div.tiny-circle {
+  height: 4px;
+  width: 4px;
+  border-radius: 4px;
+  background: #adaeb4;
+  margin: 0 7px;
+}
+
+div.navigation {
+  width: 100%;
+  border-bottom: 2px solid #a9b3d2;
+}
+
+div.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+div.links a {
+  font-size: 14.625px;
+  color: #43acff;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+div.links .visited a {
+  opacity: 0.9;
+  color: #008eff;
+}
+
+div.links div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  white-space: nowrap;
+  margin: 0 10px;
+}
+
+div.selected-navmenu hr {
+  width: 135%;
+  height: 4px;
+  border-radius: 10px 10px 0 0;
+  margin: 10px 0 0 0;
+  position: relative;
+  bottom: -2px;
+  opacity: 0.9;
+}
+
+hr.hidden-line {
+  background: none;
+  border: none;
+}
+
+hr.show-line {
+  background: #008eff;
+}
+
+/*****************************
+    ABOUT USERS STYLES
+*****************************/
+div.about-user {
+  padding: 20px 30px;
+  height: 69vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+p.p-contact {
+  font-size: 14.625px;
+  color: #adaeb4;
+  margin: 0 0 0 10%;
+}
+
+div.contact-details {
+  margin-top: 13px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+div.contacts-card {
+  flex: 0 0 80%;
+  box-sizing: border-box;
+  border-radius: 9px;
+  height: 40vh;
+  margin: 10px 0;
+}
+
+div.contacts-card.empty {
+  border: 1.6875px dashed #a9b3d2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.contacts-card.filled {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+p.contact-name {
+  font-size: 20.5px;
+  color: #434b65;
+  font-weight: 900;
+  margin: 5px;
+}
+
+p.contact-age {
+  font-size: 13.5px;
+  color: #adaeb4;
+}
+
+div.reach-out {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+}
+
+div.contacts-card p:last-child {
+  font-size: 14.625px;
+  text-align: center;
+  color: #a9b3d2;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
+}
+
+p.diag {
+  font-size: 14.625px;
+  color: #adaeb4;
+  margin: 0 0 0 2%;
+}
+
+div.diagnosis {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+div.d-nosis {
+  flex: 0 0 100%;
+  background: #fff;
+  border-radius: 9px;
+  padding: 1rem;
+  margin: 6px 0;
+}
+
+div.condition {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14.625px;
+  letter-spacing: 0.01em;
+  color: #434b65;
+}
+
+div.condition img {
+  position: relative;
+  top: 3px;
+}
+
+div.d-nosis > p {
+  font-size: 13.5px;
+  color: #adaeb4;
+  margin-bottom: 0;
+}
+
+/*****************************
+   DOCUMENTATION SCREEN STYLE
+ ******************************/
+div.documentation {
+  padding: 20px 30px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 69vh;
+}
+
+div.documentation > div {
+  display: flex;
+  position: relative;
+}
+
+.doc-card {
+  position: relative;
+}
+
+/************************
+ Create a custom checkbox 
+************************/
+
+.wrapper {
+  position: relative;
+  width: 15%;
+}
+
+.wrapper input {
+  height: 22.5px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 22.5px;
+}
+
+.wrapper input + label::before {
+  border: 2.25043px solid #a9b3d2;
+  border-radius: 4.5px;
+  content: "";
+  height: 22.5px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 22.5px;
+  opacity: 0.3;
+}
+
+.wrapper input + label::after {
+  content: "";
+  border: 4px solid #a9b3d2;
+  border-left: 0;
+  border-top: 0;
+  height: 15px;
+  left: 6px;
+  opacity: 0;
+  position: absolute;
+  top: 2px;
+  transform: rotate(45deg);
+  transition: opacity 0.2s ease-in-out;
+  width: 9px;
+}
+
+.wrapper input:checked + label::after {
+  opacity: 1;
+}
+
+div.doc-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 25px 15px;
+  background: #fff;
+  border-radius: 3px 9px 9px 3px;
+  margin: 15px 0;
+  white-space: nowrap;
+  color: #a9b3d2;
+}
+
+div.doc-card > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 40px;
+}
+
+div.doc-card.no-bg {
+  background: none;
+  margin: 0;
+  padding-bottom: 0;
+}
+
+div.doc-card::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 9px 0 0 9px;
+}
+
+div.doc-card.blue-border-left::before {
+  background: #43acff;
+}
+
+div.doc-card.green-border-left::before {
+  background: #33cdba;
+}
+
+div.doc-card.no-bg span {
+  font-size: 14.6278px;
+}
+
+div.doc-card span {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16.8782px;
+  color: #a9b3d2;
+  width: 85%;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+div.doc-card span p {
+  margin: 0 10px;
+}
+
+div.doc-card span i {
+  margin-right: 10px;
+}
+
+div.doc-card span p:first-child {
+  flex: 0 0 30%;
+}
+
+div.doc-card span p:nth-child(2) {
+  flex: 0 0 70%;
+}
+
+div.doc-card span p:nth-child(3) {
+  flex: 0 0 50%;
+}
+
+div.doc-card span p:last-child {
+  flex: 0 0 40%;
+}
+
+div.doc-card div.extra {
+  display: block;
+  white-space: normal;
+  height: fit-content;
+}
+
+div.extra > div {
+  display: flex;
+  align-items: center;
+  color: #9aa6ce;
+  font-size: 16.8815px;
+  margin: 10px 0;
+}
+
+div.extra > div img {
+  margin-right: 10%;
+}
+
+div.extra > div p {
+  margin: 0;
+}
+
+div.patient-btns {
+  display: flex;
+  flex-flow: row wrap;
+  white-space: nowrap;
+  font-size: 16.8815px;
+  color: #fff;
+}
+
+div.patient-btn {
+  background: #43acff;
+  border-radius: 4.50173px;
+  box-shadow: 0px 2.25087px 6.7526px rgba(77, 77, 86, 0.05);
+  padding: 7px 22px;
+  margin: 3px 0 10px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: center;
+}
+
+/*************************
+  CALENDAR SCREEN STYLES  
+*************************/
+
+div.calendar {
+  padding: 10px;
+  height: 69vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+div.custom-calendar {
+  background: #fff;
+  border-radius: 9px;
+  width: 100%;
+}
+
+div.month-year {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #9aa6ce;
+  font-size: 16.875px;
+  padding: 10px;
+}
+
+div.month-year div.year,
+div.month {
+  display: flex;
+  align-items: center;
+}
+
+div.month-year div.year p,
+div.month p {
+  margin: 0 5px;
+}
+
+div.month-year div.year i,
+div.month i {
+  margin: 0 5px;
+}
+
+div.calendar-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+div.cal-grid {
+  font-size: 15.75px;
+  color: #9aa6ce;
+  padding: 0.5rem;
+  border-top: 1px solid rgba(169, 179, 210, 0.2);
+  border-right: 1px solid rgba(169, 179, 210, 0.2);
+  height: 4rem;
+}
+
+div.cal-grid.no-border {
+  border-right: none;
+}
+
+div.cal-grid.days {
+  font-size: 13px;
+  color: #adaeb4;
+  border: none;
+  margin-bottom: -1.2rem;
+}
+
+div.cal-grid.blur,
+div.cal-grid.former,
+div.cal-grid.future {
+  color: rgba(154, 166, 206, 0.3);
+}
+
+div.mobile-keys {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 80%;
+}
+
+div.key {
+  display: flex;
+  align-items: center;
+}
+
+div.key p {
+  margin: 0;
+}
+
+div.key-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: #f46b45;
+  opacity: 0.6;
+  margin-right: 5px;
+}
+
+div.div-card {
+  border-radius: 5px;
+  opacity: 0.6;
+  padding: 2px 5px;
+  font-size: 12.375px;
+  color: #fff;
+  text-align: center;
+  width: fit-content;
+}
+
+div.div-with-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.key-color.red,
+.div-card.red-card {
+  background: #eb5757;
+}
+
+div.key-color.orange,
+.div-card.orange-card {
+  background: #f2994a;
+}
+
+div.key-color.green,
+.div-card.green-card {
+  background: #27ae60;
+}
+
+@media (min-width: 600px) {
+  div.links {
+    width: 70%;
+  }
+
+  p.p-contact {
+    margin: 0 0 0 3%;
+  }
+
+  div.contact-details {
+    justify-content: flex-start;
+  }
+
+  div.contacts-card {
+    flex: 0 0 45%;
+    margin: 10px 2.5%;
+  }
+
+  div.doc-card span p:first-child {
+    flex: 0 0 20%;
+  }
+
+  div.doc-card span p:nth-child(2) {
+    flex: 0 0 50%;
+  }
+
+  div.doc-card span p:nth-child(3) {
+    flex: 0 0 30%;
+  }
+
+  div.doc-card span p:last-child {
+    flex: 0 0 25%;
+  }
+
+  div.patient-btn {
+    margin: 3px 10px 10px 0;
+  }
+
+  div.calendar {
+    padding: 20px 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .top-icons hr {
+    height: 60px;
+    top: -20px;
+  }
+
+  div.selected-user {
+    padding: 30px;
+    height: auto;
+  }
+
+  div.about-user,
+  div.documentation,
+  div.calendar {
+    height: 64vh;
+  }
+
+  div.links {
+    width: 60%;
+  }
+
+  div.contacts-card {
+    flex: 0 0 30%;
+    margin: 10px 1.5%;
+  }
+
+  .wrapper {
+    width: 10%;
+  }
+
+  div.doc-card span p:first-child {
+    flex: 0 0 12%;
+  }
+
+  div.doc-card span p:nth-child(2) {
+    flex: 0 0 35%;
+  }
+
+  div.doc-card span p:nth-child(3) {
+    flex: 0 0 20%;
+  }
+
+  div.doc-card span p:last-child {
+    flex: 0 0 15%;
+  }
+
+  div.cal-grid {
+    height: 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  div.user-options {
+    display: flex;
+    width: 32%;
+    justify-content: space-between;
+  }
+
+  a.cd1 {
+    display: flex;
+    width: fit-content;
+    border-radius: 4.5px;
+    padding: 8px 20px;
+    font-size: 13.5px;
+  }
+
+  a.cd1:hover {
+    color: #fff;
+    font-size: 14.5px;
+  }
+
+  a.cd2 {
+    display: none;
+  }
+
+  a.cd1 img {
+    margin-right: 10px;
+  }
+
+  div.links {
+    width: 55%;
+    margin-left: 18px;
+    overflow: hidden;
+  }
+
+  div.selected-navmenu hr {
+    width: 160%;
+  }
+
+  div.contacts-card {
+    height: 50vh;
+  }
+
+  p.diag {
+    margin-top: 15px;
+  }
+
+  div.d-nosis {
+    flex: 0 0 45%;
+    margin: 6px 2.5%;
+  }
+
+  div.custom-calendar {
+    margin-bottom: 30px;
+  }
+
+  div.mobile-keys {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.user-options {
+    width: 26vw;
+    cursor: pointer;
+  }
+
+  div.contacts-card {
+    flex: 0 0 28%;
+    margin: 10px 2.5%;
+  }
+
+  div.documentation {
+    padding: 20px 50px;
+  }
+
+  div.doc-card {
+    padding: 12px 0 12px 25px;
+  }
+
+  div.extra > div {
+    margin: 20px 0;
+  }
+
+  #j_bob {
+    display: block;
+    font-size: 14.625px;
+    color: #9aa6ce;
+    margin: 0 10px;
+    font-weight: 600;
+  }
+}
